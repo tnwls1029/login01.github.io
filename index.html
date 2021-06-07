@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        li{list-style: none;}
+        a{
+            text-decoration: none;
+            display: block;
+            color: #333;
+        }
+ 
+
+        fieldset {border: 0;}
+        legend{
+            position: absolute;
+            left: -9999999px;
+        }
+        .wrap{
+            width: 1920px;
+            height: 1080px;
+            background-color: #F4F5F7;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+
+        .wrap label{
+            position: absolute;
+            left:-999999999px;
+        }
+
+
+        input[type="text"], input[type="password"] {
+            width:100%;
+            height:40px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            margin:5px 0;
+            padding: 0 10px;
+        }
+
+
+
+        .wrap .hall{
+            width: 1120px;
+            height: 1080px;
+            float: left;
+        }
+        .wrap .fieldset{
+            background-color: #F4F5F7;
+            width: 800px;
+            height: 1080px;
+        }
+
+
+        .wrap .fieldset::after{
+            content:'';
+            display:block;
+            clear:both;
+        }
+
+        .btn {
+            width: 640px;
+            height: 80px;
+            border: 1px solid #B80106;
+            background-color: #B80106;
+            font-size: 25px;
+            font-weight: bold;
+            color:#fff;
+            margin-top: 10px;
+            border-radius: 50px;
+            margin: 42px 0 128px 0;
+        }
+        .btn2{
+            border: 1px solid #00CF36;
+            background-color: #00CF36;
+            border-radius: 50px;
+            width: 640px;
+            height: 80px;
+            margin-bottom: 25px;
+            font-size: 16px;
+            display:inline-block;
+            line-height: 80px;
+        }
+        .btn2 span{
+            vertical-align: top;
+        }
+        .btn3{
+            border: 1px solid #FFE600;
+            background-color: #FFE600;
+            border-radius: 50px;
+            width: 640px;
+            height: 80px;
+            font-size: 16px;
+            display:inline-block;
+            line-height: 80px;
+        }
+        .btn3 span{
+            vertical-align: top;
+        }
+
+        .ha_in{
+            width: 640px;
+            height: 1080px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+        .ha_in .rogo{
+            margin:70px 0 63px 0;
+        }
+
+        .idpass input[type="text"]{
+            height: 80px;
+        }
+
+        .idpass input[type="password"]{
+            height: 80px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="">
+            <div class="hall">
+                <img src="img/wepimg.jpg" alt="클리핑마스크"/>
+            </div>
+
+        <fieldset>
+            <div class="ha_in">
+            <div class="rogo">
+                <img src="img/weprogo1.png" alt="로고"/>
+            </div>
+
+            <div class="idpass">
+            <div>
+                <legend>개인정보(필수)</legend>
+                <label for="name">아이디</label>
+                <input type="text" id="name"
+                placeholder="아이디">
+            </div>
+           
+            <div>
+                <label>비밀번호</label>
+                <input type="password" id="pass"
+                placeholder="비밀번호" required>
+            </div>
+            </div>
+
+            <button class="btn">로그인</button>
+            <button class="btn2">
+                <img src="img/naver.png" alt="네이버"/>
+                <span>네이버로 로그인</span>
+            </button>
+            
+            <button class="btn3">
+                <img src="img/kakaoro.png" alt="카카오"/>
+                <span>카카오로 로그인</span>
+            </button>
+        </div>
+        </fieldset>
+        </form>
+            </div>
+</body>
+</html>
